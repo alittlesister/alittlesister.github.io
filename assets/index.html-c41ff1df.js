@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-2e25198a","path":"/database/","title":"Blanche的博客","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"Blanche的博客","description":"前端,技术,开发,技术分享,Blanche,学习方法"},"headers":[],"git":{"updatedTime":1677085292000,"contributors":[{"name":"blanche","email":"1370421211@qq.com","commits":2}]},"filePathRelative":"database/README.md"}');export{a as data};

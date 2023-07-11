@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+	body,html{
+		background:url(chaxun/backgroundimage.jpg) no-repeat;
+		background-size:cover;
+		overflow: hidden;
+		}
+        *{margin:0;padding:0;list-style: none;}
+        .page{width:100%;height:100%}
+        .containter{width:100%;height:100%;position:absolute;left:0;top:0;}
+        .dian{position:absolute;right:20px;top:50%}
+        .dian ul{width:14px;}
+        .dian li{width:10px;height:10px;border-radius: 50%;text-align: center;margin:0 auto;margin-bottom: 10px;cursor:pointer;}
+       .dian .da{width:14px;height:14px;}
+       .nav{
+	width:40px;
+	height:800px;
+	position: absolute;
+	left:1200px;
+	top: 70px;
+	z-index: 111;
+}
+       .nav li{
+	   width:40px;
+	   height:40px;
+	   margin:80px 0px;
+	   background:url(chaxun/images/%E6%8C%89%E9%92%AE1.png) no-repeat;				       background-size:cover;
+	   cursor:pointer;
+	   }
+       .nav .bg{
+	   background:url(chaxun/images/%E6%8C%89%E9%92%AE2.png) no-repeat;
+	   background-size:cover;
+
+	   }
+    #apDiv1 {
+	position: absolute;
+	left: 8px;
+	top: 133px;
+	width: 762px;
+	height: 486px;
+	z-index: 112;
+}
+    #apDiv2 {
+	position: absolute;
+	left: 780px;
+	top: 132px;
+	width: 739px;
+	height: 487px;
+	z-index: 113;
+}
+iframe{
+	min-width:1050px;
+	min-height:950px;
+	display:block;
+	overflow-x:hidden;
+	padding-top:40px;
+	padding-left:50px;
+	}
+    </style>
+    <script type="text/javascript" src="chaxun/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="chaxun/js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            var nowpage=0;
+            var lock=true;
+           function donghua(){
+             $('.containter').animate({'top': -100*nowpage+'%'}, 500)
+                $('.page').eq(nowpage).addClass('current').siblings().removeClass('current')
+                $('.dian ul li').eq(nowpage).addClass('da').siblings().removeClass('da')
+                 $('.nav ul li').eq(nowpage).addClass('bg').siblings().removeClass('bg')
+           }
+            $(document).mousewheel(function (event,delta) {
+                if(lock){ 
+                nowpage=nowpage-delta;
+                if(nowpage<0){nowpage=0;}
+                if(nowpage>3){nowpage=3;}
+                 donghua();
+                lock=false;
+                setTimeout(function  () {
+                    // body...
+                    lock=true;
+                },1000);
+            
+            
+             }
+            }) 
+          $('.nav ul li').click(function(event) {
+              nowpage=$(this).index();
+               if(nowpage<=3){donghua();
+			   }   
+          });
+          $('.dian ul li').click(function(event) {
+              nowpage=$(this).index();
+               donghua();
+			      
+          });
+        
+        });
+    </script>
+</head>
+<body>
+<div class="nav">
+    <ul>
+        <li class='bg'></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div class="containter">
+<div class="page current">
+<iframe src="chaxun/data.html" scrolling="yes" frameborder="0" class="scrolling">
+
+</iframe>
+
+
+</div>
+        <div class="page page1">
+<iframe src="chaxun/data1.html" scrolling="yes" class="scrolling" frameborder="0">
+
+</iframe>
+
+</div>
+        <div class="page page2">
+<iframe src="chaxun/data2.html" scrolling="yes" class="scrolling" frameborder="0">
+
+</iframe>
+      
+        </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-ca5689ce","path":"/product/","title":"我的产品和思维学习","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"我的产品和思维学习","description":"前端,技术,开发,技术分享,Blanche,学习方法"},"headers":[],"git":{"updatedTime":1676648515000,"contributors":[{"name":"blanche","email":"1370421211@qq.com","commits":1}]},"filePathRelative":"product/README.md"}');export{t as data};

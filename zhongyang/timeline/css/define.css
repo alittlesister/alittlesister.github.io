@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+	font-family:mFont;
+	src: url("../img/mFont.ttf");
+}
+body{
+    width: 100%;
+    height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+/* 动画定义 */
+ @keyframes back{
+	0%{
+		background: url(../img/时间轴.png) no-repeat;
+		background-position:0;
+	}
+	50%{
+		background: url(../img/时间轴.png) no-repeat;
+		background-position:-20px 0;
+	}
+	100%{
+		background: url(../img/时间轴.png) no-repeat;
+		background-position:0;
+	}
+}
+ @keyframes timeBox{
+ 	0%{
+ 		content:"";
+ 		width: 0px;
+ 		height: 0;
+ 		position: absolute;
+ 		top: 40px;
+ 		left: 160px;
+ 		box-sizing: border-box;
+ 		overflow: hidden;
+ 		opacity: 1;
+ 		border-radius: 5px;
+ 		box-shadow: none;
+ 		border:none;
+ 		display: none;
+ 	}
+	20%{
+		content:"";
+		width: 0px;
+		height: 0;
+		position: absolute;
+		top: 40px;
+		left: 160px;
+		box-sizing: border-box;
+		overflow: hidden;
+		opacity: 1;
+		border-radius: 5px;
+		box-shadow: none;
+		border:none;
+		display: block;
+	}
+ 	60%{
+ 		width: 400px;
+ 		height: 400px;
+ 		content:"";
+ 		position: absolute;
+ 		box-sizing: border-box;
+ 		transform: scale(1.3);
+ 		border:2px solid #fff;
+ 		box-shadow: 1px 1px 15px #fff;
+ 		opacity: 0;
+ 		top: 0px;
+ 		left: 0px;
+ 		display: block;
+ 	}
+ 	100%{
+ 		display: none;
+ 	}
+ }
+@keyframes circle1{
+	from{
+		transform: rotateZ(0);
+	}
+	to{
+		transform: rotateZ(360deg);
+	}
+}
+@keyframes circle2{
+	from{
+		transform: rotateZ(45deg);
+	}
+	to{
+		transform: rotateZ(405deg);
+	}
+}
+@keyframes circle3{
+	from{
+		transform: rotateZ(90deg);
+	}
+	to{
+		transform: rotateZ(450deg);
+	}
+}
+@keyframes circle4{
+	from{
+		transform: rotateZ(135deg);
+	}
+	to{
+		transform: rotateZ(495deg);
+	}
+}
+
+/* container */
+.container{
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+	top: 0;
+	left: 0;
+}
+div.watermark{
+	width: 400px;
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	font-size: 100px;
+	font-family: "mFont";
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	z-index: 9999;
+	color: rgba(255,255,255,0.4);
+}
+/* 时间点 */
+ul.points{
+    width: 5500px;
+    height: 587px;
+    list-style: none;
+    position:absolute;
+    top: 25%;
+    left: 0px;
+    z-index: 2;
+	background: url(../img/时间轴.png) no-repeat;
+	background-position:top left;
+}
+.animate{
+	animation: back 1s ease-in infinite;
+}
+/* 时间点 */
+	/* 时间点li*/
+.container ul.points>li{
+    width: 142px;
+    height:135px;
+    float: left;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 1s ease-out;
+}
+
+.container ul.points>li.active{
+    transform: scale(1.1);
+	width: 142px;
+	height:135px;
+	border-radius: 50%;
+}
+.container ul.points>li.active.activeone,.container ul.points>li.active.activetwo{
+	z-index: 200;
+}
+	/* 时间点li>timeBox*/
+.container ul.points>li.active.activeone>div.timeBox{
+	width: 320px;
+	min-height: 150px;
+	height: auto;
+	position: absolute;
+	border-radius: 5px;
+	box-shadow: 0px 0px 15px rgba(255,255,255,0.8) inset;
+	z-index: 12;
+	background: rgba(255,255,255,0.5);
+	bottom: -200%;
+}
+.container ul.points>li.active.activetwo>div.timeBox{
+	width: 320px;
+	min-height: 150px;
+	height: auto;
+	position: absolute;
+	border-radius: 5px;
+	box-shadow: 0px 0px 15px rgba(255,255,255,0.8) inset;
+	z-index: 12;
+	background: rgba(255,255,255,0.5);
+	top: -55%;
+}
+/* 时间框 */
+.container ul.points>li>div.timeBox{
+    width: 320px;
+	height: 85px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+    position: absolute;
+	left: -85px;
+    font-size: 14px;
+	letter-spacing：30px;
+    line-height: 20px;
+	font-family: "microsoft yahei";
+    color:rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
+    transition: all .8s ease-out;
+	border-radius: 5px;
+	background: none;
+	overflow: hidden;
+}
+.container ul.points>li>div.timeBox>p{
+	width: 300px;
+	padding: 0 8px;
+	min-height: 28px;
+	line-height: 28px;
+	display: inline-block;
+	text-overflow:ellipsis;
+	text-indent: 28px;
+	text-align: justify;
+}
+div.container ul.points>li.active>div.timeBox{
+	color: #333;
+}
+.container ul.points>li:first-child>div.timeBox{
+	bottom: -210px;
+}
+/*第一个盒子*/
+.container ul.points>li:nth-child(2)>div.timeBox{
+	bottom: 240px;
+	left: 40px;
+
+}
+/*第一个盒子*/
+.container ul.points>li:nth-child(3)>div.timeBox{
+	top: 240px;
+}
+.container ul.points>li:nth-child(4)>div.timeBox{
+	bottom: 240px;
+}.container ul.points>li:nth-child(5)>div.timeBox{
+	top: 240px;
+}.container ul.points>li:nth-child(6)>div.timeBox{
+	bottom: 240px;
+}.container ul.points>li:nth-child(7)>div.timeBox{
+	top: 240px;
+
+}
+.container ul.points>li:nth-child(8)>div.timeBox{
+	bottom: 240px;
+}.container ul.points>li:nth-child(9)>div.timeBox{
+	top: 240px;
+}.container ul.points>li:nth-child(10)>div.timeBox{
+	bottom: 240px;
+}.container ul.points>li:nth-child(11)>div.timeBox{
+	top: 240px;
+}
+.container ul.points>li:nth-child(12)>div.timeBox{
+	bottom: 240px;
+}.container ul.points>li:nth-child(13)>div.timeBox{
+	top: 240px;
+}
+.container ul.points>li:nth-child(14)>div.timeBox{
+	bottom: 240px;
+}
+.container ul.points>li:nth-child(15)>div.timeBox{
+	top: 240px;
+}
+/* 时间框伪类 */
+.container ul.points>li>div.timeBox:after{
+	content:"";
+	width: 0px;
+	height: 0;
+	position: absolute;
+	top: 40px;
+	left: 160px;
+	box-sizing: border-box;
+	overflow: hidden;
+	transition: all 1.2s ease-in;
+	opacity: 1;
+	border-radius: 5px;
+	box-shadow: none;
+	border:none;
+}
+.container ul.points>li.active>div.timeBox:after{
+	animation: timeBox 2s ease-in 1;
+}
+
+/* 时间div */
+.swiper-container{
+    width: 100%;
+}
+.container ul.points>li.active>div.time{
+    position: absolute;
+    color:#fff;
+	font-size: 40px;
+	border-radius: 50%;
+	background: url(../img/active.png) no-repeat center;
+	z-index: 5;
+}
+div.container ul.points>li>div.time:before{
+	content:"";
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border-radius: 50%;
+	transition: all .8s ease-in;
+	border-left:1px solid #fff;
+}
+div.container ul.points>li:first-child>div.time:before{
+	animation: circle1 3s ease-in infinite;
+}
+div.container ul.points>li:nth-child(2)>div.time:before{
+	animation: circle2 4s ease-in infinite;
+}
+div.container ul.points>li:nth-child(3)>div.time:before{
+	animation: circle3 5s ease-in infinite;
+}
+div.container ul.points>li:nth-child(4)>div.time:before{
+	animation: circle4 1.5s ease-in infinite;
+}
+div.container ul.points>li:nth-child(5)>div.time:before{
+	animation: circle1 3s ease-in infinite;
+}
+div.container ul.points>li:nth-child(6)>div.time:before{
+	animation: circle2 2s ease-in infinite;
+}
+div.container ul.points>li:nth-child(7)>div.time:before{
+	animation: circle3 3s ease-in infinite;
+}
+div.container ul.points>li:nth-child(8)>div.time:before{
+	animation: circle4 3s ease-in infinite;
+}
+div.container ul.points>li:nth-child(9)>div.time:before{
+	animation: circle1 3s ease-in infinite;
+}
+div.container ul.points>li:nth-child(10)>div.time:before{
+	animation: circle2 3s ease-in infinite;
+}
+div.container ul.points>li:nth-child(11)>div.time:before{
+	animation: circle3 2s ease-in infinite;
+}
+div.container ul.points>li:nth-child(12)>div.time:before{
+	animation: circle4 1s ease-in infinite;
+}
+div.container ul.points>li:nth-child(13)>div.time:before{
+	animation: circle1 5s ease-in infinite;
+}
+div.container ul.points>li:nth-child(14)>div.time:before{
+	animation: circle3 3s ease-in infinite;
+}
+div.container ul.points>li:nth-child(15)>div.time:before{
+	animation: circle1 4s ease-in infinite;
+}
+.container ul.points>li>div.time{
+	width: 142px;
+	height:135px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color:#ff0000;
+	text-align: center;
+	line-height: 135px;
+	font-size: 40px;
+	font-family: "mFont";
+	transition: all 1s ease-in;
+	background: url(../img/normal.png) no-repeat center;
+	z-index: 5;
+}
+/* 时间线 */
+.container ul.points>li.active.activeone>span.connectLine,.container ul.points>li.active.activetwo>span.connectLine{
+	opacity: 0;
+}
+.container ul.points>li>span.connectLine{
+    display: inline-block;
+    width: 2px;
+    height: 100px;
+    background: linear-gradient(to bottom,rgba(255,255,255,0.01) 30%,rgba(255,255,255,1) 70%,rgba(255,255,255,0.01) 100%);
+    position: absolute;
+    left: 70px;
+	animation: lineBack 1s ease-out infinite;
+	transition: all 1s ease-out;
+	background: linear-gradient(to bottom,rgba(255,255,255,0.01) 30%,rgba(255,255,255,1) 60%,rgba(255,255,255,0.5) 100%);
+}
+.container ul.points>li:first-child>span.connectLine{
+	bottom: -80px;
+}
+.container ul.points>li:nth-child(2)>span.connectLine{
+	bottom: 160px;
+}
+.container ul.points>li:nth-child(3)>span.connectLine{
+	bottom: -80px;
+}
+.container ul.points>li:nth-child(4)>span.connectLine{
+	bottom: 160px;
+}
+.container ul.points>li:nth-child(5)>span.connectLine{
+	bottom: -80px;
+}
+.container ul.points>li:nth-child(6)>span.connectLine{
+	bottom: 160px;
+}
+.container ul.points>li:nth-child(7)>span.connectLine{
+	bottom: -80px;
+}
+.container ul.points>li:nth-child(8)>span.connectLine{
+	bottom: 160px;
+}
+.container ul.points>li:nth-child(9)>span.connectLine{
+	bottom: -80px;
+}
+.container ul.points>li:nth-child(10)>span.connectLine{
+	bottom: 160px;
+}
+.container ul.points>li:nth-child(11)>span.connectLine{
+	bottom: -80px;
+}
+.container ul.points>li:nth-child(12)>span.connectLine{
+	bottom: 160px;
+}
+.container ul.points>li:nth-child(13)>span.connectLine{
+	bottom: -80px;
+}
+.container ul.points>li:nth-child(14)>span.connectLine{
+	bottom: 160px;
+}
+.container ul.points>li:nth-child(15)>span.connectLine{
+	bottom: -80px;
+}
+/* 弹出框 */
+/* div.content{
+	width: 628px;
+	height: 760px;
+    position: absolute;
+    top: 160px;
+    left: 646px;
+    background: rgba(255,255,255,0.3);
+    overflow: hidden;
+    z-index: -1;
+	opacity: 0;
+	transition: all .5s ease-in;
+}
+div.content.show{
+    z-index: 200;
+	opacity: 1;
+	
+}
+.content>span.close{
+    width: 50px;
+	text-align: center;
+    height: 30px;
+	line-height: 30px;
+	font-size: 24px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #000;
+	cursor: pointer;
+	background: red;
+	opacity: 1;
+}
+.content>div.details{
+    width: 628px;
+    height: 0px;
+	background: #999;
+	transition: all 1.2s ease-out;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0.4;
+}
+div.content.show>div.details{
+    width: 628px;
+    height: 760px;
+	background: #999;
+	top: 0px;
+	opacity: 1;
+} */
+ 
+/* video */
+#video{
+	width: 1920px;
+	height: auto;
+	z-index: -100;
+	position: absolute;
+	top: -20px;
+	left: 0;
+	}
+	/* 流光走线 */
+#line{
+	position: absolute;
+	top: -30px;
+	left: 0;
+	z-index: -5;
+}
+/*手指滑动 */
+
+#fingerMove{
+	width: 1920px;
+	height: 1080px;
+	position: absolute;
+	top: -40px;
+	left: -40px;
+	z-index: 0;
+}
+	

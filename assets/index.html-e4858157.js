@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7e25fb5f","path":"/front/","title":"前端方向的内容","lang":"zh-CN","frontmatter":{"title":"前端方向的内容","description":"前端,技术,开发,技术分享,Blanche,学习方法"},"headers":[],"git":{"updatedTime":1677085292000,"contributors":[{"name":"blanche","email":"1370421211@qq.com","commits":2}]},"filePathRelative":"front/README.md"}');export{t as data};

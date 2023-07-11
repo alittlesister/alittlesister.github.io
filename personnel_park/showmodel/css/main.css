@@ -1,0 +1,415 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	width: 1920px;
+	height: 1080px;
+	overflow: hidden;
+}
+@keyframes name1{
+		0%{	
+		position: absolute;
+		bottom:-18px;
+		left:-5px;
+		}
+		50%{	
+		position: absolute;
+		bottom:-18px;
+		left:82%;
+		}
+		100%{	
+		position: absolute;
+		bottom:-18px;
+		left:82%;
+		opacity: 0;
+		}
+}
+@keyframes name2{
+		0%{	
+		position: absolute;
+		bottom:-42px;
+		left:0px;
+		}
+		50%{	
+		position: absolute;
+		bottom:-42px;
+		left:70%;
+		}
+		100%{	
+		position: absolute;
+		bottom:-42px;
+		left:70%;
+		opacity: 0;
+		}
+}
+@keyframes name3{
+		0%{	
+		position: absolute;
+		bottom:-20px;
+		left:-5px;
+		}
+		50%{	
+		position: absolute;
+		bottom:-20px;
+		left:65%;
+		}
+		100%{	
+		position: absolute;
+		bottom:-20px;
+		left:65%;
+		opacity: 0;
+		}
+}
+
+.videoBG{
+	width: 1920px;
+	height:1080px;
+	margin:0;
+	padding:0;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: -9999;
+}
+.actOne{
+	width: 1920px;
+	height: 1080px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.actTwo{
+	width: 1920px;
+	height: 1080px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background:url(../img/background.png) no-repeat center;
+	background-size: cover;
+}
+.start{
+	width: 513px;
+	height: 281px;
+	background:url(../img/start.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	bottom:30%;
+	left:35%;
+	opacity: 1;
+	animation: names 1s ease-in 1;
+	animation-fill-mode: forwards;
+}
+.start:after{
+	content: "";
+	position: absolute;
+	bottom:-18px;
+	left:0;
+	width: 100px;
+	height: 100px;
+	background:url(../img/twoStage.png)  no-repeat center;
+	animation: name1 4s ease-in-out 2s infinite;
+}
+@keyframes names{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.video1{
+	display: none;
+	height: 1920px;
+	width: 1080px;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+.video1 video{
+	margin: 0;
+	padding: 0;
+	width: 1920px;
+	height: 1080px;
+	z-index: -999;
+}
+.video2{
+	display: none;
+	position: fixed;
+	bottom: 210px;
+	left: 50px;
+	height: 707px;;
+	width: 1200px;
+	z-index: 2;
+	}
+.video2 video{
+	width: 100%;
+	height: 100%;
+	z-index: -99;
+}
+/**/
+
+.show{
+	display: none;
+	position: absolute;
+	right:160px;
+	top:240px;
+}
+.show div{
+	clear: all;
+	width: 328px;
+	height: 94px;
+	display: none;
+	margin-top:40px;
+	position: relative;
+}
+.show div:after{
+	content: "";
+	position: absolute;
+	bottom:-42px;
+	left:-5px;
+	width: 100px;
+	height: 100px;
+	background:url(../img/twoStage.png)  no-repeat center;
+	animation: name2 3s ease-out 2s infinite;
+}
+.controller1{
+	z-index: 777;
+	background: url(../img/objIntro.png)  no-repeat center;
+	background-size: cover;
+}
+.controller2{
+	z-index: 778;
+	background: url(../img/objShow.png)  no-repeat center;
+	background-size: cover;
+}
+.controller3{
+	z-index: 779;
+	background: url(../img/yishangIntro.png)  no-repeat center;
+	background-size: cover;
+}
+.return{
+	z-index: 780;
+	background: url(../img/return.png)  no-repeat center;
+	background-size: cover;
+}
+
+
+/**/
+.intro1{
+	width: 1247px;
+	height: 718px;
+	display: none;
+	position: absolute;
+	top:184px;
+	left:100px;
+	z-index: 555;
+	background: #003B80;
+}
+.wrap{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.intro1 .intro1_text{
+	width: 400px;
+	text-align: left;
+	height: 700px;
+	line-height: 400px;
+	font-size: 15px;
+	color:#FFFDEF;	
+	text-shadow: 0 0 3px #00FFFE;
+	margin-top:70px;
+	margin-left:30px;
+}
+.intro1 .intro1_img{
+
+}
+.intro1 .intro1_img img{
+	width: 100%;
+	height: 100%;
+	border: none;
+	
+}
+.intro2{
+	width: 1247px;
+	height: 718px;
+	display: none;
+	position: absolute;
+	top:184px;
+	left:100px;
+	z-index: 556;
+
+}
+.intro3{
+	width: 1247px;
+	height: 718px;
+	display: none;
+	position: absolute;
+	top:184px;
+	left:100px;
+	z-index: 557;
+}
+.close1,.close2,.close3{
+	clear: both;
+	width: 137px;
+	height: 39px;
+	position: absolute;
+	top:10px;
+	right:10px;
+	z-index: 888;
+	font-size: 30px;
+	color:#00c9ff;
+	background: url(../img/close.png) no-repeat center;
+	background-size: cover;
+}
+.con{
+	width: 1247px;
+	height: 60px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: absolute;
+	top: -90px;
+	left:50px;
+}
+.bot{
+	width: 1247px;
+	height: 718px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.controller1_1,.controller1_2,.controller1_3{
+	width: 209px;
+	height: 60px;
+	background-size: cover;	
+	display: inline-block;
+	margin-left:100px;
+	position: relative;
+}
+.controller1_1{
+	background: url(../img/companyIntro.png) no-repeat center;
+}
+.controller1_2{
+	background: url(../img/honor.png) no-repeat center;
+}
+.controller1_3{
+	background: url(../img/3Dwork.png) no-repeat center;
+}
+.controller1_1:after,.controller1_2:after,.controller1_3:after{
+	content: "";
+	position: absolute;
+	bottom:-42px;
+	left:0;
+	width: 100px;
+	height: 100px;
+	background:url(../img/threeStage.png)  no-repeat center;
+	animation: name2 4s ease-in-out 2s infinite;
+}
+.part1,.part2,.part3{
+	width: 1247px;
+	height: 718px;
+	display: none;
+}
+
+.education{
+	width: 1247px;
+	height: 718px;
+	position: relative;
+}
+.education1{
+	width: 700px;
+	height: 46px;
+	position: absolute;
+	bottom:-65px;
+	left:230px;
+	display: flex;
+	flex-direction: row;
+}
+.education1_con1,.education1_con2,.education1_con3{
+	width: 160px;
+	height: 46px;
+	margin-left:60px;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	
+}
+.education1_con1{
+	background: url(../img/strength.png)  no-repeat center;
+}
+.education1_con2{
+	background: url(../img/scanEquipment.png)  no-repeat center;
+}
+.education1_con3{
+	background: url(../img/education.png)  no-repeat center;
+}
+
+.education1_con1:after,.education1_con2:after,.education1_con3:after{
+	content: "";
+	position: absolute;
+	bottom:-20px;
+	left:0;
+	width: 50px;
+	height: 50px;
+	background:url(../img/fourStage.png)  no-repeat center;
+	animation: name3 4s ease-in-out 2s infinite;
+}
+.education2{
+	width: 1247px;
+	height: 718px;
+	display: flex;
+	flex-direction: row;
+}
+.education2_part1,.education2_part2,.education2_part3{
+	width: 1247px;
+	height: 718px;
+	display: none;
+}
+
+.education2_part2{
+	position: relative;
+}
+.education2_part2 .3Dcontent{
+	display: flex;
+	flex-direction: row;
+}
+.education2_part2 .3Dcontent img{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.education2_part2 .3Dcontent img:first-child{
+	display: block;
+}
+.pageLeft{
+	width: 60px;
+	height: 60px;
+	font-size: 40px;
+	color:#0066ff;
+	text-shadow: 0 0 15px #00c9ff, 0 0 2px #00c9ff;
+	position: absolute;
+	left:25px;
+	top:45%;
+}
+.pageLeft i{
+	font-size: 46px;
+}
+.pageRight{
+	width: 60px;
+	height: 60px;
+	font-size: 40px;
+	color:#0066ff;
+	text-shadow: 0 0 15px #00c9ff, 0 0 2px #00c9ff;
+	position: absolute;
+	right:15px;
+	top:45%;
+}
+.pageRight i{
+	font-size: 46px;
+}
+
+
+

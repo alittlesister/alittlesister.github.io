@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+
+html,body{
+	width: 1920px;	
+	height:1080px;	
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#box{
+	width: 1920px;
+	height: 1080px;
+	position: absolute;
+	top:0;
+	left:0;
+	margin: 0;
+	padding: 0;
+	display: none;
+	background: url(../images/background.png) no-repeat center;
+	background-size:cover;
+}
+#homeIndex{
+	width: 1920px;
+	height: 1080px;
+	position: absolute;
+	top:0;
+	left:0;
+	margin: 0;
+	padding: 0;
+	background: url(../images/home.png) no-repeat center;
+	background-size:cover;
+}
+.home{
+	width: 506px;
+	height: 141px;
+	position: absolute;
+	bottom:160px;
+	left:720px;
+	background:url(../images/show.png) no-repeat center;
+	background-size:cover;
+	z-index: 25;
+}
+.fra{
+	width: 1920px;
+	height: 1080px;
+	position: absolute;
+	bottom:0;
+	left:0;
+}
+.potContents{
+	width: 1300px;
+	height: 800px;
+	position: absolute;
+	top:90px;
+	left:150px;
+	z-index: 671;
+	display: none;
+	
+}
+
+.bg0{
+	background: url(../images/intro.png) no-repeat center;
+	background-size: cover;
+}
+.bg2{
+	background: url(../images/ret.png) no-repeat center;
+	background-size: cover;
+}
+.btn{
+	width: 133px;
+	height: 48px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	z-index: 675;
+}
+.demoShow{
+	width: 1300px;
+	height: 800px;
+	background: brown;
+	position: absolute;
+	top:120px;
+	left:400px;
+}
+.demoMenu{
+	width: 250px;
+	height: 500px;
+	position: absolute;
+	top:130px;
+	left:100px;
+}
+.demoMenu div{
+	width: 240px;
+	height: 86px;
+	margin-top: 20px;
+}

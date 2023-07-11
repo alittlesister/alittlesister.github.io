@@ -1,0 +1,129 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	width: 1920px;
+	height: 1080px;
+    overflow: hidden;
+}
+
+.actOne{
+	margin: 0;
+	padding: 0;
+	width: 1920px;
+	height: 1080px;
+	display: block;
+	position: relative;
+	top:0;
+	left:0;
+}
+.actTwo{
+	margin: 0;
+	padding: 0;
+	width: 1920px;
+	height: 1080px;
+	display: none;
+	position: relative;
+	top:0;
+	left:0;
+}
+.actThree{
+	margin: 0;
+	padding: 0;
+	width: 1920px;
+	height: 1080px;
+	position: relative;
+	top:0;
+	left:0;
+	display: none;
+}
+@keyframes names{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.start{
+	width: 513px;
+	height: 282px;
+	cursor: pointer;
+	position: absolute;
+	bottom:380px;
+	left:700px;
+	color:#00c9ff;	
+	background: url(../img/start.png) no-repeat center;
+	background-size: cover;
+	animation: names 3s ease-in 1;
+	animation-fill-mode: forwards;
+}
+
+.video1{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 1080px;
+	width: 1920px;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+	}
+.video1 video{
+	width: 100%;
+	height: 100%;
+	z-index: -99;
+}
+
+.video2{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 1080px;
+	width: 1920px;
+	margin: 0;
+	padding: 0;
+	z-index: 2;
+	}
+.video2 video{
+	width: 100%;
+	height: 100%;
+	z-index: -90;
+}
+.videoBG1{
+	width: 1920px;
+	height: 1080px;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: -999;
+}
+.videoBG2{
+	width: 1920px;
+	height: 1080px;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: -991;
+}
+        #cont{
+            position: relative;
+            top:150px;
+            left:60px;
+            width: 1800px;
+			height: 820px;
+			z-index: 5;
+        }
+          
+		.return{
+			width: 255px;
+			height: 140px;
+			cursor: pointer;
+			position: absolute;
+			bottom:50px;
+			left:808px;
+			z-index: 9999;
+			background: url(../img/return.png) no-repeat center;
+			background-size: cover;
+		}

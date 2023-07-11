@@ -1,0 +1,1 @@
+import{_ as l,M as e,p as _,q as c,N as n,V as s}from"./framework-943286ea.js";const i={};function a(r,d){const t=e("define-login"),o=e("ClientOnly");return _(),c("div",null,[n(o,null,{default:s(()=>[n(t)]),_:1})])}const m=l(i,[["render",a],["__file","index.html.vue"]]);export{m as default};

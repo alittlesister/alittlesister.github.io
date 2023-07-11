@@ -1,0 +1,22 @@
+import{_ as s,M as a,p as e,q as t,R as p,N as o,V as l,t as r,a1 as c}from"./framework-943286ea.js";const i={},u=c(`<p>Component name &quot;login&quot; should always be multi-word</p><p>报错说明是组件需要驼峰写法，在.eslint.cjs 中配置一下代码</p><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&#39;vue/multi-word-component-names&#39;</span><span class="token operator">:</span> <span class="token string">&#39;off&#39;</span>
+  <span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Delete <code>␍</code></p><p><strong>_ windows 和 linux 的行尾格式不同导致的问题，&#39;lf&#39;和‘crlf&#39;的问题，以下配置 vscode，重启，就行了 _</strong></p><p><img src="https://img-blog.csdnimg.cn/c3113ef228af4bfdae9da5d863709eee.png" alt="在这里插入图片描述"></p><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 一行的字符数，如果超过会进行换行，默认为80</span>
+  <span class="token literal-property property">printWidth</span><span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span>
+  <span class="token comment">// 一个tab代表几个空格数，默认为80</span>
+  <span class="token literal-property property">tabWidth</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+  <span class="token comment">// 是否使用tab进行缩进，默认为false，表示用空格进行缩减</span>
+  <span class="token literal-property property">useTabs</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token comment">// 字符串是否使用单引号，默认为false，使用双引号</span>
+  <span class="token literal-property property">singleQuote</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">// 行位是否使用分号，默认为true</span>
+  <span class="token literal-property property">semi</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token comment">// 是否使用尾逗号，有三个可选值&quot;&lt;none|es5|all&gt;&quot;</span>
+  <span class="token literal-property property">trailingComma</span><span class="token operator">:</span> <span class="token string">&quot;none&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 对象大括号直接是否有空格，默认为true，效果：{ foo: bar }</span>
+  <span class="token literal-property property">bracketSpacing</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">endOfLine</span><span class="token operator">:</span> <span class="token string">&quot;auto&quot;</span><span class="token punctuation">,</span> <span class="token comment">//行尾格式</span>
+  <span class="token literal-property property">singleAttributePerLine</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,7);function d(m,k){const n=a("RouterLink");return e(),t("div",null,[p("p",null,[o(n,{to:"/front/engineer/"},{default:l(()=>[r("<返回上一页")]),_:1})]),u])}const b=s(i,[["render",d],["__file","前端格式化报错问题.html.vue"]]);export{b as default};

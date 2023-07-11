@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour appversion="6.0" start="node1" apprev="17213">
+  <panorama id="node1">
+    <input leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" levelingpitch="0" overlap="1" height="1000" levelbiashidpi="0.400" width="1000" leveltilesize="510" levelbias="0.400">
+      <level preload="0" predecode="0" height="1000" width="1000"/>
+      <level preload="1" predecode="1" height="500" width="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start pan="-39.5507" fov="59.2084" tilt="1.83273" projection="4"/>
+      <flyin pan="180" fov="270" tilt="-90" projection="9"/>
+      <min pan="0" fov="5" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" fov="120" fovstereographic="270" tilt="90"/>
+    </view>
+    <userdata customnodeid="p1" tags="北京银行全景" latitude="" copyright="" info="" comment="" longitude="" title="" source="" description="" author="" datetime=""/>
+    <hotspots wordwrap="1" height="20" width="180">
+      <label textcolor="0x000000" enabled="1" border="1" background="1" backgroundcolor="0xffffff" wordwrap="1" height="20" borderradius="1" backgroundalpha="1" width="180" borderalpha="1" bordercolor="0x000000" textalpha="1"/>
+      <polystyle mode="0" handcursor="1" backgroundcolor="0x0000ff" backgroundalpha="0.2509803921568627" borderalpha="1" bordercolor="0x0000ff"/>
+      <hotspot url="{node2}" pan="-108.43" title="京——文化脉搏" description="文化脉搏" id="Point03" tilt="-12.01" skinid="ht_node" target="-174.66/-1.58984/70"/>
+    </hotspots>
+    <media>
+      <sound mode="0" nodechangekeep="0" pan="-1.000" startmutedmobile="0" field="90.000" loop="1" ambientlevel="0.000" id="_background" tilt="-1.000" pansize="10.000" level="1.000" tiltsize="10.000">
+        <source url="media/CHILLING_1525152071.wav"/>
+      </sound>
+    </media>
+    <transition zoomspeed="2" enabled="1" zoomout="3" zoomfov="20" zoomin="2" blendcolor="0x000000" blendtime="1" type="crossdissolve" zoomoutpause="1" softedge="0"/>
+    <autorotate nodedelay="0.00" returntohorizon="0.000" enabled="1" delay="2.00" useanimation="0" noderandom="1" speed="0.100" startloaded="0"/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control hideabout="0" lockedkeyboardzoom="0" invertcontrol="1" contextprojections="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" dblclickfullscreen="0" invertwheel="0" lockedkeyboard="0" speedwheel="1" contextfullscreen="0" sensitivity="8"/>
+  </panorama>
+  <panorama id="node2">
+    <input leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" levelingpitch="0" overlap="1" height="1500" levelbiashidpi="0.400" width="1500" leveltilesize="510" levelbias="0.400">
+      <level preload="0" predecode="0" height="1500" width="1500"/>
+      <level preload="0" predecode="0" height="750" width="750"/>
+      <level preload="1" predecode="1" height="375" width="375"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start pan="0" fov="70" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" fov="5" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" fov="120" fovstereographic="270" tilt="90"/>
+    </view>
+    <userdata customnodeid="p2" tags="北京银行全景" latitude="" copyright="" info="" comment="" longitude="" title="" source="" description="" author="" datetime=""/>
+    <hotspots wordwrap="1" height="20" width="180">
+      <label textcolor="0x000000" enabled="1" border="1" background="1" backgroundcolor="0xffffff" wordwrap="1" height="20" borderradius="1" backgroundalpha="1" width="180" borderalpha="1" bordercolor="0x000000" textalpha="1"/>
+      <polystyle mode="0" handcursor="1" backgroundcolor="0x0000ff" backgroundalpha="0.2509803921568627" borderalpha="1" bordercolor="0x0000ff"/>
+      <hotspot url="{node1}" pan="-6.36" title="首厅" description="首厅" id="Point02" tilt="-11.17" skinid="ht_node" target="86.5137/2.21576/70"/>
+      <hotspot url="{node3}" pan="-150.72" title="精——落点深圳" description="落点深圳" id="Point03" tilt="-15.88" skinid="ht_node" target=""/>
+    </hotspots>
+    <media/>
+    <transition zoomspeed="2" enabled="1" zoomout="3" zoomfov="20" zoomin="2" blendcolor="0x000000" blendtime="1" type="crossdissolve" zoomoutpause="1" softedge="0"/>
+    <autorotate nodedelay="0.00" returntohorizon="0.000" enabled="1" delay="2.00" useanimation="0" noderandom="1" speed="0.100" startloaded="0"/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control hideabout="0" lockedkeyboardzoom="0" invertcontrol="1" contextprojections="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" dblclickfullscreen="0" invertwheel="0" lockedkeyboard="0" speedwheel="1" contextfullscreen="0" sensitivity="8"/>
+  </panorama>
+  <panorama id="node3">
+    <input leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" levelingpitch="0" overlap="1" height="750" levelbiashidpi="0.400" width="750" leveltilesize="510" levelbias="0.400">
+      <level preload="0" predecode="0" height="750" width="750"/>
+      <level preload="1" predecode="1" height="375" width="375"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start pan="0" fov="70" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min fovpixel="2" pan="-180" tilt="-60.5024"/>
+      <max fovfisheye="360" pan="180" fov="120" fovstereographic="270" tilt="60.5024"/>
+    </view>
+    <userdata customnodeid="" tags="Program Files" latitude="" copyright="" info="" comment="" longitude="" title="" source="" description="" author="" datetime=""/>
+    <hotspots wordwrap="1" height="20" width="180">
+      <label textcolor="0x000000" enabled="1" border="1" background="1" backgroundcolor="0xffffff" wordwrap="1" height="20" borderradius="1" backgroundalpha="1" width="180" borderalpha="1" bordercolor="0x000000" textalpha="1"/>
+      <polystyle mode="0" handcursor="1" backgroundcolor="0x0000ff" backgroundalpha="0.2509803921568627" borderalpha="1" bordercolor="0x0000ff"/>
+      <hotspot url="{node2}" pan="-219.82" title="精——落点深圳" description="落点深圳" id="Point01" tilt="-15.35" skinid="ht_node" target="-6.66973/-2.47497/70"/>
+      <hotspot url="{node4}" pan="2.24" title="沉浸影院" description="沉浸影院" id="Point02" tilt="-12.11" skinid="ht_node" target="53.8818/-2.70191/70"/>
+    </hotspots>
+    <media/>
+    <transition zoomspeed="2" enabled="1" zoomout="3" zoomfov="20" zoomin="2" blendcolor="0x000000" blendtime="1" type="crossdissolve" zoomoutpause="1" softedge="0"/>
+    <autorotate nodedelay="0.00" returntohorizon="0.000" enabled="1" delay="2.00" useanimation="0" noderandom="1" speed="0.100" startloaded="0"/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control hideabout="0" lockedkeyboardzoom="0" invertcontrol="1" contextprojections="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" dblclickfullscreen="0" invertwheel="0" lockedkeyboard="0" speedwheel="1" contextfullscreen="0" sensitivity="8"/>
+  </panorama>
+  <panorama id="node4">
+    <input leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" levelingpitch="0" overlap="1" height="1000" levelbiashidpi="0.400" width="1000" leveltilesize="510" levelbias="0.400">
+      <level preload="0" predecode="0" height="1000" width="1000"/>
+      <level preload="1" predecode="1" height="500" width="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start pan="0" fov="70" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" fov="120" fovstereographic="270" tilt="90"/>
+    </view>
+    <userdata customnodeid="" tags="Program Files" latitude="" copyright="" info="" comment="" longitude="" title="" source="" description="" author="" datetime=""/>
+    <hotspots wordwrap="1" height="20" width="180">
+      <label textcolor="0x000000" enabled="1" border="1" background="1" backgroundcolor="0xffffff" wordwrap="1" height="20" borderradius="1" backgroundalpha="1" width="180" borderalpha="1" bordercolor="0x000000" textalpha="1"/>
+      <polystyle mode="0" handcursor="1" backgroundcolor="0x0000ff" backgroundalpha="0.2509803921568627" borderalpha="1" bordercolor="0x0000ff"/>
+      <hotspot url="{node5}" pan="-131.72" title="兢——业务创新" description="业务创新" id="Point01" tilt="-19.98" skinid="ht_node" target="-91.131/2.77134/70"/>
+      <hotspot url="{node3}" pan="157.67" title="企业荣光" description="企业荣光" id="Point02" tilt="-16.1" skinid="ht_node" target="179.47/0.522493/70"/>
+    </hotspots>
+    <media/>
+    <transition zoomspeed="2" enabled="1" zoomout="3" zoomfov="20" zoomin="2" blendcolor="0x000000" blendtime="1" type="crossdissolve" zoomoutpause="1" softedge="0"/>
+    <autorotate nodedelay="0.00" returntohorizon="0.000" enabled="1" delay="2.00" useanimation="0" noderandom="1" speed="0.100" startloaded="0"/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control hideabout="0" lockedkeyboardzoom="0" invertcontrol="1" contextprojections="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" dblclickfullscreen="0" invertwheel="0" lockedkeyboard="0" speedwheel="1" contextfullscreen="0" sensitivity="8"/>
+  </panorama>
+  <panorama id="node5">
+    <input leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" levelingpitch="0" overlap="1" height="1000" levelbiashidpi="0.400" width="1000" leveltilesize="510" levelbias="0.400">
+      <level preload="0" predecode="0" height="1000" width="1000"/>
+      <level preload="1" predecode="1" height="500" width="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start pan="0" fov="70" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" fov="120" fovstereographic="270" tilt="90"/>
+    </view>
+    <userdata customnodeid="" tags="Program Files" latitude="" copyright="" info="" comment="" longitude="" title="" source="" description="" author="" datetime=""/>
+    <hotspots wordwrap="1" height="20" width="180">
+      <label textcolor="0x000000" enabled="1" border="1" background="1" backgroundcolor="0xffffff" wordwrap="1" height="20" borderradius="1" backgroundalpha="1" width="180" borderalpha="1" bordercolor="0x000000" textalpha="1"/>
+      <polystyle mode="0" handcursor="1" backgroundcolor="0x0000ff" backgroundalpha="0.2509803921568627" borderalpha="1" bordercolor="0x0000ff"/>
+      <hotspot url="{node6}" pan="349.66" title="菁——团队建设" description="团队建设" id="Point01" tilt="-7.99" skinid="ht_node" target=""/>
+      <hotspot url="{node4}" pan="-339.69" title="沉浸影院" description="沉浸影院" id="Point02" tilt="-8.99" skinid="ht_node" target=""/>
+    </hotspots>
+    <media/>
+    <transition zoomspeed="2" enabled="1" zoomout="3" zoomfov="20" zoomin="2" blendcolor="0x000000" blendtime="1" type="crossdissolve" zoomoutpause="1" softedge="0"/>
+    <autorotate nodedelay="0.00" returntohorizon="0.000" enabled="1" delay="2.00" useanimation="0" noderandom="1" speed="0.100" startloaded="0"/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control hideabout="0" lockedkeyboardzoom="0" invertcontrol="1" contextprojections="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" dblclickfullscreen="0" invertwheel="0" lockedkeyboard="0" speedwheel="1" contextfullscreen="0" sensitivity="8"/>
+  </panorama>
+  <panorama id="node6">
+    <input leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" levelingpitch="0" overlap="1" height="1500" levelbiashidpi="0.400" width="1500" leveltilesize="510" levelbias="0.400">
+      <level preload="0" predecode="0" height="1500" width="1500"/>
+      <level preload="0" predecode="0" height="750" width="750"/>
+      <level preload="1" predecode="1" height="375" width="375"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start pan="0" fov="70" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" fov="120" fovstereographic="270" tilt="90"/>
+    </view>
+    <userdata customnodeid="" tags="Program Files" latitude="" copyright="" info="" comment="" longitude="" title="" source="" description="" author="" datetime=""/>
+    <hotspots wordwrap="1" height="20" width="180">
+      <label textcolor="0x000000" enabled="1" border="1" background="1" backgroundcolor="0xffffff" wordwrap="1" height="20" borderradius="1" backgroundalpha="1" width="180" borderalpha="1" bordercolor="0x000000" textalpha="1"/>
+      <polystyle mode="0" handcursor="1" backgroundcolor="0x0000ff" backgroundalpha="0.2509803921568627" borderalpha="1" bordercolor="0x0000ff"/>
+      <hotspot url="{node5}" pan="161.92" title="兢——业务创新" description="业务创新" id="Point01" tilt="-12.21" skinid="ht_node" target="172.327/0.0483924/70"/>
+      <hotspot url="{node7}" pan="-2.44" title="旌——不忘初心" description="不忘初心" id="Point02" tilt="-13.03" skinid="ht_node" target=""/>
+      <hotspot url="{node4}" pan="-235.45" title="沉浸影院" description="沉浸影院" id="Point03" tilt="-12.49" skinid="ht_node" target=""/>
+    </hotspots>
+    <media/>
+    <transition zoomspeed="2" enabled="1" zoomout="3" zoomfov="20" zoomin="2" blendcolor="0x000000" blendtime="1" type="crossdissolve" zoomoutpause="1" softedge="0"/>
+    <autorotate nodedelay="0.00" returntohorizon="0.000" enabled="1" delay="2.00" useanimation="0" noderandom="1" speed="0.100" startloaded="0"/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control hideabout="0" lockedkeyboardzoom="0" invertcontrol="1" contextprojections="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" dblclickfullscreen="0" invertwheel="0" lockedkeyboard="0" speedwheel="1" contextfullscreen="0" sensitivity="8"/>
+  </panorama>
+  <panorama id="node7">
+    <input leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" levelingpitch="0" overlap="1" height="1500" levelbiashidpi="0.400" width="1500" leveltilesize="510" levelbias="0.400">
+      <level preload="0" predecode="0" height="1500" width="1500"/>
+      <level preload="0" predecode="0" height="750" width="750"/>
+      <level preload="1" predecode="1" height="375" width="375"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start pan="0" fov="70" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" fov="120" fovstereographic="270" tilt="90"/>
+    </view>
+    <userdata customnodeid="" tags="Program Files" latitude="" copyright="" info="" comment="" longitude="" title="" source="" description="" author="" datetime=""/>
+    <hotspots wordwrap="1" height="20" width="180">
+      <label textcolor="0x000000" enabled="1" border="1" background="1" backgroundcolor="0xffffff" wordwrap="1" height="20" borderradius="1" backgroundalpha="1" width="180" borderalpha="1" bordercolor="0x000000" textalpha="1"/>
+      <polystyle mode="0" handcursor="1" backgroundcolor="0x0000ff" backgroundalpha="0.2509803921568627" borderalpha="1" bordercolor="0x0000ff"/>
+      <hotspot url="{node4}" pan="158.34" title="沉浸影院" description="沉浸影院" id="Point01" tilt="0.79" skinid="ht_node" target="69.8169/-2.79813/70"/>
+      <hotspot url="{node6}" pan="-109.87" title="菁——团队建设" description="菁——团队建设" id="Point02" tilt="-15.32" skinid="ht_node" target=""/>
+    </hotspots>
+    <media/>
+    <transition zoomspeed="2" enabled="1" zoomout="3" zoomfov="20" zoomin="2" blendcolor="0x000000" blendtime="1" type="crossdissolve" zoomoutpause="1" softedge="0"/>
+    <autorotate nodedelay="0.00" returntohorizon="0.000" enabled="1" delay="2.00" useanimation="0" noderandom="1" speed="0.100" startloaded="0"/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control hideabout="0" lockedkeyboardzoom="0" invertcontrol="1" contextprojections="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" dblclickfullscreen="0" invertwheel="0" lockedkeyboard="0" speedwheel="1" contextfullscreen="0" sensitivity="8"/>
+  </panorama>
+  <masternode>
+    <userdata customnodeid="" tags="" latitude="" copyright="" info="" comment="" longitude="" title="" source="" description="" author="" datetime=""/>
+  </masternode>
+</tour>
